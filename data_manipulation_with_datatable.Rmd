@@ -259,7 +259,7 @@ penguinsDT[, .(island, bill_length = bill_length_mm)]
 - We can do the above simultaneously. For example,
 
 ```{r multiple_Selecting_rows_cols}
-# select rows, and creating new cols
+# select rows based on a condition, and deselect island col
 penguinsDT[species == "Adelie" & 
              bill_length_mm < 50 &
              body_mass_g > 4500,
